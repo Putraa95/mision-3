@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="bahan/navigasi.png" alt="Navigation Logo" />
+    </nav>
+    <div class="container-wrapper">
+        <div class="container">
+            <h1>Pendaftaran Akun</h1>
+            <p>Yuk, buat akun baru dan mulai belajar dengan kami!</p>
+
+            <form method="get" action="login.html">
+                <div class="txt_field">
+                    <label for="fullname">Nama Lengkap </label>
+                    <input type="text" id="fullname" required>
+                    <span></span>
+                </div>
+
+                <div class="txt_field">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" required>
+                    <span></span>
+                </div>
+
+                <div class="txt_field">
+                    <label for="phone">No Telpon </label>
+                    <div class="phone-field">
+                        <select id="country-code">
+                            <option value="+62" data-image="bahan/flags/id.svg">+62</option>
+                            <option value="+1" data-image="bahan/flags/us.svg">+1</option>
+                            <option value="+44" data-image="bahan/flags/gb.svg">+44</option>
+
+                        </select>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <span></span>
+                </div>
+
+                <div class="txt_field">
+                    <label for="password">Kata Sandi </label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div class="txt_field">
+                    <label for="confirm-password">Konfirmasi Kata Sandi </label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+
+                <div class="pass">Lupa Password ?</div>
+                <input type="submit" value="Daftar">
+            </form>
+
+            <form action="menu.html" method="get">
+                <input type="submit" value="Masuk">
+            </form>
+            <div class="submit_line">
+                <p class="a">atau</p>
+            </div>
+
+            <button type="button" class="google-btn">
+                <img src="bahan/google.png.png" alt="Google Icon" class="google-icon">
+                Daftar dengan Google
+            </button>
+
+        </div>
+    </div>
+</body>
+
+</html>
